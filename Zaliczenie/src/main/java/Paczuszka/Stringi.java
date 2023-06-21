@@ -4,10 +4,13 @@ import Paczka.Customer;
 
 public class Stringi extends Customer {
     public static String odmowa() {
-        return "Niewystarczające środki na koncie!";
+        return "Amount withdrawn exceeds the current balance!";
     }
     public static String potwierdzenie() {
-        return "Operacja udana!";
+        return "Done!";
+    }
+    public static String stanKonta() {
+        return "The account balance is: $";
     }
 }
 

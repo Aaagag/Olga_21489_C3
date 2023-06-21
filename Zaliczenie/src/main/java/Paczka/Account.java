@@ -1,6 +1,6 @@
 package Paczka;
-import static Paczuszka.Stringi.odmowa;
-import static Paczuszka.Stringi.potwierdzenie;
+
+import static Paczuszka.Stringi.*;
 
 public class Account extends Customer {
     private int id;
@@ -36,7 +36,7 @@ public class Account extends Customer {
 
     public String toString() {
         String var10000 = this.customer.toString();
-        return var10000 + "balance=$" + this.balance;
+        return var10000 = stanKonta() + this.balance;
     }
 
     public String getCustomerName() {
@@ -48,7 +48,7 @@ public class Account extends Customer {
         return null;
     }
 
-    public Account withdrwal(double amount) {
+    public Account withdraw(double amount) {
         if (this.balance >= amount) {
             this.balance -= amount;
             System.out.println(this.balance);
