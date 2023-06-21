@@ -9,5 +9,8 @@ public class Stringi extends Customer {
     public static String potwierdzenie() {
         return "Operacja udana!";
     }
+    public static String stanKonta() {
+        return "Stan konta wynosi $";
+    }
 }
 
